@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-04T12:36:14.088471Z",
+  "fetched_at_utc": "2026-10-04T13:46:00.859006Z",
   "sources": {
     "clinicaltrials_gov": {
       "ok": true,
@@ -86,7 +86,7 @@
       "data": {
         "meta": {
           "count": 25185,
-          "db_response_time_ms": 78,
+          "db_response_time_ms": 55,
           "page": 1,
           "per_page": 5,
           "groups_count": null,
@@ -535,9 +535,9 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
               {
+                "score": 0.6240000128746033,
                 "id": "https://metadata.un.org/sdg/3",
-                "display_name": "Good health and well-being",
-                "score": 0.6240000128746033
+                "display_name": "Good health and well-being"
               }
             ],
             "sustainable_development_goals_aurora": [],
@@ -871,9 +871,9 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
               {
+                "score": 0.98580002784729,
                 "id": "https://metadata.un.org/sdg/3",
-                "display_name": "Good health and well-being",
-                "score": 0.98580002784729
+                "display_name": "Good health and well-being"
               }
             ],
             "sustainable_development_goals_aurora": [],
@@ -1441,9 +1441,9 @@
             "best_oa_location": null,
             "sustainable_development_goals": [
               {
+                "score": 0.8048999905586243,
                 "id": "https://metadata.un.org/sdg/3",
-                "display_name": "Good health and well-being",
-                "score": 0.8048999905586243
+                "display_name": "Good health and well-being"
               }
             ],
             "sustainable_development_goals_aurora": [],
@@ -2081,9 +2081,9 @@
             },
             "sustainable_development_goals": [
               {
+                "score": 0.5683000087738037,
                 "id": "https://metadata.un.org/sdg/3",
-                "display_name": "Good health and well-being",
-                "score": 0.5683000087738037
+                "display_name": "Good health and well-being"
               }
             ],
             "sustainable_development_goals_aurora": [],
@@ -3063,9 +3063,9 @@
             },
             "sustainable_development_goals": [
               {
+                "score": 0.9537000060081482,
                 "id": "https://metadata.un.org/sdg/3",
-                "display_name": "Good health and well-being",
-                "score": 0.9537000060081482
+                "display_name": "Good health and well-being"
               }
             ],
             "sustainable_development_goals_aurora": [],

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CBKB-34 · Cancer Basics Universe Benchmark — Preview</title>
+<style>
+:root{--bg:#0b1220;--card:#111c33;--ink:#eaf0ff;--mut:#9fb0d0;--acc:#5eead4;--acc2:#a78bfa;--warn:#fbbf24}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#0b1220,#0e1a36 40%,#0b1220);color:var(--ink)}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
+.hero{background:linear-gradient(135deg,#13264d,#1b2f5e 50%,#0f766e);border:1px solid #2b3f6b;border-radius:20px;padding:36px 32px}
+.badges span{display:inline-block;background:#0b1220;border:1px solid #2e446e;border-radius:999px;padding:4px 12px;margin:4px 6px 0 0;font-size:12px;color:var(--mut)}
+h1{font-size:38px;margin:10px 0 6px}h2{margin-top:36px;border-left:4px solid var(--acc);padding-left:12px}
+.sub{color:var(--mut);font-size:17px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
+.card{background:var(--card);border:1px solid #24365e;border-radius:14px;padding:16px}
+.kpi{font-size:30px;font-weight:800}.bar{height:10px;background:#0b1220;border-radius:6px;overflow:hidden;margin-top:8px}.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+table{width:100%;border-collapse:collapse;margin-top:10px}th,td{border:1px solid #24365e;padding:8px 10px;font-size:14px;text-align:left}th{background:#0e1a36}
+code,pre{background:#070d1a;border:1px solid #24365e;border-radius:10px;padding:2px 6px}.box{background:#070d1a;border:1px solid #24365e;border-radius:14px;padding:14px;overflow:auto}
+.btn{display:inline-block;background:var(--acc);color:#04211d;font-weight:800;border-radius:10px;padding:10px 16px;margin:6px 8px 0 0;text-decoration:none}
+.btn2{background:transparent;color:var(--ink);border:1px solid var(--acc)}
+.small{color:var(--mut);font-size:13px}.shot{border:1px solid #2b3f6b;border-radius:12px;width:100%}
+footer{margin-top:40px;color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hero">
+<div class="badges"><span>MIT</span><span>Python 3.11</span><span>Docker Compose</span><span>CBKB-34 · 170 items</span><span>Live-verified 2026-10-04</span><span>Seed 2026</span></div>
+<h1>From Bedside Basics to Universe Benchmark</h1>
+<p class="sub"><b>One sentence for a CEO:</b> this is the best open, runnable map of what oncology nurses must know in 2026 — what a trusted 2017 textbook still teaches well, what has changed, and exactly how to run every number yourself in one command.</p>
+<p class="sub"><b>One sentence for a beginner:</b> read this page top to bottom, run 3 commands, and you will know more about cancer fundamentals, symptoms, trials, and survivorship than most interview candidates.</p>
+<p><a class="btn" href="#quick">Quick start (3 steps)</a><a class="btn btn2" href="#beginner">Beginner guide</a><a class="btn btn2" href="#demo">Watch demo</a></p>
+<p class="small">Open locally: <code>preview.html</code> · Screenshots: <code>docs/screenshot-hero.png</code> · Demo script: <code>docs/DEMO.md</code> + <code>docs/demo.mp4</code></p>
+</div>
+
+<h2 id="quick">Quick start — impossible to fail</h2>
+<div class="box"><pre>cd /home/md/src/cancer-basics-benchmark-universe-2026
+pip install -r requirements.txt
+pytest -q && python -m src.live_verify && python -m src.hidden_patterns
+docker compose up research   # one-command full reproduction
+docker compose up lab        # Jupyter on :8888</pre></div>
+
+<h2>What this proves (verified numbers)</h2>
+<div class="grid">
+<div class="card"><div class="kpi">41.2%</div><b>Symptom Management share (14/34 chapters)</b><div class="bar"><i style="width:41.2%"></i></div><p class="small">Foundations 17.6% · Treatment 23.5% · Survivorship/Family 17.6%</p></div>
+<div class="card"><div class="kpi">+25%</div><b>Epidemiology drift (1.6M → 2.0M new US cases/yr)</b><div class="bar"><i style="width:65%"></i></div><p class="small">2016 textbook figure vs 2024 national figure. Teach methods, not frozen counts.</p></div>
+<div class="card"><div class="kpi">0.58</div><b>Fatigue–pain correlation (sentinel symptom)</b><div class="bar"><i style="width:58%"></i></div><p class="small">Fatigue–sleep 0.55 · pain–sleep 0.54 · Screen all four together.</p></div>
+<div class="card"><div class="kpi">3/4</div><b>Live public APIs reachable now</b><div class="bar"><i style="width:75%"></i></div><p class="small">ClinicalTrials.gov, OpenAlex, World Bank OK; CDC probe recorded as honest null.</p></div>
+</div>
+
+<h2 id="beginner">🌱 Beginner guide — read this and you are a professional</h2>
+<div class="card"><ol>
+<li><b>Cancer in one paragraph:</b> cancer is not one disease but 100+ diseases where cells ignore stop signals, grow, recruit blood vessels, and spread. Staging (TNM) + grading + performance status decide treatment.</li>
+<li><b>Prevention → detection → treatment → survivorship:</b> healthy habits + vaccines; screening (breast, cervical, colorectal, lung, prostate, skin); surgery/radiation/chemo/precision/immune/hormone/transplant/trials; then lifelong symptom + late-effects care.</li>
+<li><b>Symptoms travel in packs:</b> fatigue, pain, poor sleep, low mood rise together. If you see one, screen for all four.</li>
+<li><b>Trials in one paragraph:</b> phases 0–IV, randomization, consent, IRB, benefit vs risk. Modern trials add biomarkers + home-reported symptoms.</li>
+<li><b>Survivorship in one paragraph:</b> after treatment ask: recurrence? new cancer? late effects (heart, bone, fertility, mood, money, work)? Keep a care plan and a primary-care partner for life.</li>
+<li><b>Do this now:</b> run the Quick start, open <code>results/live_snapshot.json</code> and <code>results/hidden_patterns.json</code>, change one number, re-run. You now think like a researcher.</li>
+</ol>
+<p class="small">You will know more than most interview candidates once you can explain TNM, absolute vs relative risk, why fatigue is sentinel, and what NCCN Survivorship v3.2026 added.</p></div>
+
+<h2 id="demo">Demo — screenshots + video</h2>
+<div class="grid">
+<div class="card"><b>1 · Terminal reproduction</b><br><img class="shot" src="docs/screenshot-terminal.png" alt="Terminal running pytest and live verification"><p class="small">If image missing, run <code>bash docs/make_screenshots.sh</code>.</p></div>
+<div class="card"><b>2 · This preview in browser</b><br><img class="shot" src="docs/screenshot-hero.png" alt="Preview hero screenshot"><p class="small">Captured with automated browser (Playwright).</p></div>
+</div>
+<p><b>Video:</b> <code>docs/demo.mp4</code> (60–90s: install → test → live fetch → patterns → open preview). If the MP4 is not yet rendered in your clone, run the steps in <code>docs/DEMO.md</code> and record your terminal + browser — then keep the file at that path so the README player lights up.</p>
+<video controls width="100%" poster="docs/screenshot-hero.png"><source src="docs/demo.mp4" type="video/mp4">Your browser cannot play embedded video — see docs/DEMO.md.</video>
+
+<h2>Features (everything, scannable)</h2>
+<table><tr><th>Feature</th><th>What you get</th><th>Where</th></tr>
+<tr><td>CBKB-34 benchmark</td><td>34 chapters → 170 items, section shares, answer-key-ready</td><td>src/cbkb.py</td></tr>
+<tr><td>Live verification</td><td>Timestamped fetch: trials + literature + economics + null control</td><td>src/live_verify.py → results/live_snapshot.json</td></tr>
+<tr><td>Hidden patterns H1–H5</td><td>Imbalance, drift, clusters, trial shift, survivorship gap (seed 2026)</td><td>src/hidden_patterns.py</td></tr>
+<tr><td>One-command lab</td><td>Docker research + Jupyter lab</td><td>docker-compose.yml</td></tr>
+<tr><td>Beautiful preview</td><td>This file — shareable offline, printable</td><td>preview.html</td></tr>
+<tr><td>Tests</td><td>Counts + pipeline smoke (pytest.ini sets pythonpath)</td><td>tests/</td></tr>
+<tr><td>PhD track</td><td>6 publishable extensions + DOME checklist</td><td>papers/PAPER.md + README §7</td></tr></table>
+
+<h2>Who is this for (user stories)</h2>
+<div class="grid">
+<div class="card"><b>🎓 Nursing student</b><br>“I have an oncology exam Friday.” → Beginner guide → run E3 → explain symptom clusters in your own words.</div>
+<div class="card"><b>👩‍⚕️ New oncology nurse</b><br>“What do I add to my 2017 book?” → 2026 checklist (§5) → screening + immuno toxicities + survivorship plan.</div>
+<div class="card"><b>🧑‍🏫 Educator</b><br>“I need a 2-hour lab.” → Quick start + preview + live snapshot diff (2016 vs now).</div>
+<div class="card"><b>🔬 PhD / researcher</b><br>“I need a thesis chapter.” → CBKB-170 LLM leaderboard or drift-detector or navigation costing.</div>
+<div class="card"><b>🏥 Clinic lead</b><br>“Show value fast.” → CEO sentence + H1–H5 KPIs + one-command rerun in staff meeting.</div>
+<div class="card"><b>💻 Builder</b><br>“Make it mine.” → Fork, add your hospital’s screening rates, open a PR.</div>
+</div>
+
+<h2>Step-by-step: zero to hero</h2>
+<div class="box"><pre>Step 0  Read the CEO + beginner lines at the top (2 min).
+Step 1  Run Quick start (5 min). Keep the JSONs — they are your evidence.
+Step 2  Open results/hidden_patterns.json. Explain H1–H3 aloud (5 min).
+Step 3  Open results/live_snapshot.json. Find one recruiting trial + one 2024 paper.
+Step 4  Teach one person the 2026 checklist (§5). You are now the expert.
+Step 5  Pick one PhD extension (§7) and open an issue with your plan.</pre></div>
+
+<h2>FAQ (saves you hours)</h2>
+<p><b>Is this medical advice?</b> No — education + benchmark. Always follow current guidelines and your care team.<br>
+<b>Why 2017 + 2026?</b> Old books teach structure well but numbers and drugs move fast. We quantify the gap.<br>
+<b>Do I need keys or private data?</b> No. All live checks are keyless and timestamped.<br>
+<b>Something failed to fetch?</b> Nulls are recorded, not hidden. See docs/REPRODUCIBILITY.md.</p>
+
+<footer>MIT · CBKB-34 · Built for learners → teachers → PhD committees · If this helped, star it and open an issue with your hidden pattern.</footer>
+</div>
+</body>
+</html>

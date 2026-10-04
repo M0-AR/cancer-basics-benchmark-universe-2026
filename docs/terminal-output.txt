@@ -1,0 +1,13 @@
+$ pytest -q
+  /home/md/src/cancer-basics-benchmark-universe-2026/src/hidden_patterns.py:40: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    out = {"generated_at_utc": datetime.datetime.utcnow().isoformat()+"Z", "seed": 2026,
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+2 passed, 1 warning in 0.18s
+$ python -m src.live_verify
+  now = datetime.datetime.utcnow().isoformat() + "Z"
+Wrote /home/md/src/cancer-basics-benchmark-universe-2026/results/live_snapshot.json at 2026-10-04T13:46:00.859006Z
+- clinicaltrials_gov: ok=True
+- openalex: ok=True
+- worldbank_gdp: ok=True
+- cdc_probe: ok=False
