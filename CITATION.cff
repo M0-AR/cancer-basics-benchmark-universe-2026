@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "From Bedside Basics to Universe Benchmark: Re-Appraising ONS Cancer Basics (2E) Against 2024–2027 Evidence and Live Public Data (CBKB-34)"
+version: 1.0.0
+date-released: 2026-10-04
+authors:
+  - family-names: "Universe Benchmark Team"
+repository-code: "https://github.com/<your-org>/cancer-basics-benchmark-universe-2026"
+license: MIT
+keywords: [oncology nursing, cancer basics, benchmark, reproducibility, symptom clusters, survivorship, precision medicine]

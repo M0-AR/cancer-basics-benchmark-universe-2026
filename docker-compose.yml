@@ -1,0 +1,18 @@
+services:
+  research:
+    build: .
+    environment:
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./results:/app/results
+    working_dir: /app
+    command: bash -c "pytest -q && python -m src.live_verify && python -m src.hidden_patterns"
+  lab:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''

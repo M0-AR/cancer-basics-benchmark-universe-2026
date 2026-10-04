@@ -1,0 +1,71 @@
+{
+  "generated_at_utc": "2026-10-04T12:36:49.302740Z",
+  "seed": 2026,
+  "H1_section_imbalance": {
+    "I Foundations": {
+      "n": 6,
+      "share": 0.176
+    },
+    "II Treatment": {
+      "n": 8,
+      "share": 0.235
+    },
+    "III Symptom Mgmt": {
+      "n": 14,
+      "share": 0.412
+    },
+    "IV Survivorship/Family": {
+      "n": 6,
+      "share": 0.176
+    }
+  },
+  "H2_epi_drift": {
+    "book_2016_new_cases_M": 1.6,
+    "acs_2024_new_cases_M": 2.0,
+    "drift_pct": 25.0,
+    "interpretation": "incidence + early-detection + aging; mortality declining for many sites"
+  },
+  "H3_symptom_cluster": {
+    "vars": [
+      "fatigue",
+      "pain",
+      "sleep_disturb",
+      "depression"
+    ],
+    "corr": [
+      [
+        1.0,
+        0.583,
+        0.551,
+        0.464
+      ],
+      [
+        0.583,
+        1.0,
+        0.544,
+        0.449
+      ],
+      [
+        0.551,
+        0.544,
+        1.0,
+        0.395
+      ],
+      [
+        0.464,
+        0.449,
+        0.395,
+        1.0
+      ]
+    ],
+    "finding": "fatigue is sentinel; screen all 4 together (NCCN Distress Thermometer logic)"
+  },
+  "H4_trial_shift": {
+    "claim": "Phase II/III + supportive-care trials dominate recruiting oncology portfolio vs 2E phase-table emphasis",
+    "verify": "see results/live_snapshot.json clinicaltrials_gov"
+  },
+  "H5_survivorship_gap": {
+    "claim": "Survivorship needs outgrew 1 chapter: NCCN 2026 ships 2 patient guides + late-effects; ONS priorities 2024-27 stress precision symptom science + navigation",
+    "verify": "agent-reach NCCN v3.2026 + OpenAlex ONS priorities paper"
+  }
+}
